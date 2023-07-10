@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'jp.ac.jec.cm0199.roomjavasample'
+    namespace 'com.leoleo.roomjavasample'
     compileSdk 33
 
     defaultConfig {
-        applicationId "jp.ac.jec.cm0199.roomjavasample"
+        applicationId "com.leoleo.roomjavasample"
         minSdk 29
         targetSdk 33
         versionCode 1

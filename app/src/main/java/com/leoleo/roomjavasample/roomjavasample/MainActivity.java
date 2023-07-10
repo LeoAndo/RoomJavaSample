@@ -1,4 +1,4 @@
-package jp.ac.jec.cm0199.roomjavasample;
+package com.leoleo.roomjavasample.roomjavasample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,10 +8,11 @@ import android.widget.TextView;
 import java.util.List;
 import java.util.concurrent.Executors;
 
-import jp.ac.jec.cm0199.roomjavasample.data.AppDatabase;
-import jp.ac.jec.cm0199.roomjavasample.data.DataModule;
-import jp.ac.jec.cm0199.roomjavasample.data.User;
-import jp.ac.jec.cm0199.roomjavasample.data.UserDao;
+import com.leoleo.roomjavasample.R;
+import com.leoleo.roomjavasample.roomjavasample.data.AppDatabase;
+import com.leoleo.roomjavasample.roomjavasample.data.DataModule;
+import com.leoleo.roomjavasample.roomjavasample.data.User;
+import com.leoleo.roomjavasample.roomjavasample.data.UserDao;
 
 public class MainActivity extends AppCompatActivity {
 

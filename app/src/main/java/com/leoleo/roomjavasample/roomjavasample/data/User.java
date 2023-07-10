@@ -1,4 +1,4 @@
-package jp.ac.jec.cm0199.roomjavasample.data;
+package com.leoleo.roomjavasample.roomjavasample.data;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;

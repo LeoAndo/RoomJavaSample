@@ -1,4 +1,4 @@
-package jp.ac.jec.cm0199.roomjavasample;
+package com.leoleo.roomjavasample.roomjavasample;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("jp.ac.jec.cm0199.roomjavasample", appContext.getPackageName());
+        assertEquals("com.leoleo.roomjavasample", appContext.getPackageName());
     }
 }

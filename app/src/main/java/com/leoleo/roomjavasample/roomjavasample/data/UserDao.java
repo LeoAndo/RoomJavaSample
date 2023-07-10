@@ -1,4 +1,4 @@
-package jp.ac.jec.cm0199.roomjavasample.data;
+package com.leoleo.roomjavasample.roomjavasample.data;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;

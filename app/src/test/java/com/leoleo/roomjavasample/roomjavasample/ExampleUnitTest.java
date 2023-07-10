@@ -1,4 +1,4 @@
-package jp.ac.jec.cm0199.roomjavasample;
+package com.leoleo.roomjavasample.roomjavasample;
 
 import org.junit.Test;
 

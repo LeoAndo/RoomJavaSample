@@ -1,10 +1,10 @@
-package jp.ac.jec.cm0199.roomjavasample.data;
+package com.leoleo.roomjavasample.roomjavasample.data;
 
 import android.content.Context;
 
 import androidx.room.Room;
 
-import jp.ac.jec.cm0199.roomjavasample.Logger;
+import com.leoleo.roomjavasample.roomjavasample.Logger;
 
 public class DataModule {
     private static DataModule dataModule;
