@@ -7,7 +7,7 @@ Java + LiveDataを使ったRoomの技術調査用アプリ
 https://github.com/LeoAndo/RoomJavaSample/blob/main/app/src/main/java/com/leoleo/roomjavasample/roomjavasample/data/DataModule.java<br>
 上記のようにコードを作成しているが、こちらの実装はroomの自動生成ファイル(java)やjetpackの内部コードなどを参考にした。<br>
 
-### jetpackの内部コード datastore
+### jetpackの内部コード datastore(kotlin)
 https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:datastore/datastore-rxjava3/src/main/java/androidx/datastore/rxjava3/RxDataStoreDelegate.kt?hl=ja
 <img width="675" alt="スクリーンショット 2023-07-13 23 53 34" src="https://github.com/LeoAndo/RoomJavaSample/assets/16476224/b96b8bd5-86b1-4812-8368-a5405dc8364f">
 
