@@ -7,23 +7,37 @@ import androidx.room.Room;
 import com.leoleo.roomjavasample.roomjavasample.Logger;
 
 public class DataModule {
-    private static DataModule dataModule;
-    private final AppDatabase db;
+    private static volatile DataModule dataModule;
+    private volatile AppDatabase appDatabase;
 
-    private DataModule(Context context) {
+    private DataModule() {
         Logger.d("hashcode= " + hashCode());
-        db = Room.databaseBuilder(context,
-                AppDatabase.class, "database-name").build();
     }
 
-    public static synchronized DataModule getInstance(Context context) {
-        if (dataModule == null) {
-            dataModule = new DataModule(context);
+    public static DataModule getInstance() {
+        if (dataModule != null) {
+            return dataModule;
+        } else {
+            synchronized (DataModule.class) {
+                if (dataModule == null) {
+                    dataModule = new DataModule();
+                }
+                return dataModule;
+            }
         }
-        return dataModule;
     }
 
-    public AppDatabase getDb() {
-        return db;
+    public AppDatabase appDatabase(Context context) {
+        if (appDatabase != null) {
+            return appDatabase;
+        } else {
+            synchronized (this) {
+                if (appDatabase == null) {
+                    appDatabase = Room.databaseBuilder(context,
+                            AppDatabase.class, "database-name").build();
+                }
+                return appDatabase;
+            }
+        }
     }
 }

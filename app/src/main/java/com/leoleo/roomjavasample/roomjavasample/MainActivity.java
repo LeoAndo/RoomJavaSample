@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView txtResult = findViewById(R.id.txtResult);
 
-        final AppDatabase db = DataModule.getInstance(this).getDb();
+        final AppDatabase db = DataModule.getInstance().appDatabase(this);
         final UserDao userDao = db.userDao();
 
         userDao.getAll().observe(this, (List<User> users) -> {
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.buttonFindByName).setOnClickListener(v -> Executors.newSingleThreadExecutor().execute(() -> {
             final User user = userDao.findByName("Taro", "Denshi");
-            if(user != null) {
+            if (user != null) {
                 userDao.delete(user);
             }
         }));
