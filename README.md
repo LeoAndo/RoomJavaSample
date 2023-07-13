@@ -3,9 +3,9 @@
 Java + LiveDataを使ったRoomの技術調査用アプリ
 
 # スレッドセーフなsingleton instanceの扱いについて
-[document](https://developer.android.com/training/data-storage/room?hl=ja#database)やroomの内部実装を見ると、RoomDatabaseやdaoをシングルトンで扱うことを推奨している。なので、<br>
+[document](https://developer.android.com/training/data-storage/room?hl=ja#database)やroomの内部実装を見ると、RoomDatabaseやdaoをシングルトンで扱うことを推奨している。<br>
 https://github.com/LeoAndo/RoomJavaSample/blob/main/app/src/main/java/com/leoleo/roomjavasample/roomjavasample/data/DataModule.java<br>
-上記のようにコードを作成しているが、こちらの実装はroomの自動生成ファイル(java)やjetpackの内部コードなどを参考にした。<br>
+こちらの実装はroomの自動生成ファイル(java)やjetpackの内部コードなどを参考にした。<br>
 
 ### jetpackの内部コード datastore(kotlin)
 https://cs.android.com/androidx/platform/frameworks/support/+/androidx-main:datastore/datastore-rxjava3/src/main/java/androidx/datastore/rxjava3/RxDataStoreDelegate.kt?hl=ja
