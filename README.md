@@ -23,3 +23,7 @@ https://github.com/JetBrains/kotlin/blob/master/libraries/stdlib/jvm/src/kotlin/
 # capture
 
 <img src=./1.png width=50%/>
+
+# refs
+ https://en.wikipedia.org/wiki/Double-checked_locking#Usage_in_Java<br>
+ https://en.wikipedia.org/wiki/Singleton_pattern<br>
